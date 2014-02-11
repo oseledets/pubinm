@@ -1,4 +1,1 @@
-bibtex
-======
-
-Bibtex repository of the INM group
+The pub.inm.ras.ru website
