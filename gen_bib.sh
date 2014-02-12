@@ -1,7 +1,7 @@
 #!/bin/bash
 bib2bib -s year -ob "cur_preprints.bib" -c '$type : "techreport" and not exists newversion' ./bibtex/our.bib 
 bib2bib -s year -ob "published.bib" -c '$type : "article" or $type : "incollection"' ./bibtex/our.bib
-bibtex2html -r -s "plain" -t "All papers" our.bib
+bibtex2html -r -s "plain" -t "All papers" ./bibtex/our.bib
 rm our.html
 #bibtex2html -s "plain" published.bib
 #bibtex2html -s "plain" cur_preprints.bib
@@ -110,4 +110,4 @@ do
     sed "s/$s1/$tp/g" "pubs_$NAME".html > "TMP$NAME.html"
     mv "TMP$NAME.html" "pubs_$NAME.html"
 done 
-
+mv final.html index.html
