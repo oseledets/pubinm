@@ -110,4 +110,4 @@ do
     sed "s/$s1/$tp/g" "pubs_$NAME".html > "TMP$NAME.html"
     mv "TMP$NAME.html" "pubs_$NAME.html"
 done 
-mv final.html index.html
+cp final.html index.html
